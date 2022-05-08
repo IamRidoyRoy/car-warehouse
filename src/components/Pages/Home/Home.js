@@ -7,6 +7,8 @@ import Footer from '../../Shared/Footer/Footer';
 import Contact from '../../Shared/Contact/Contact';
 import Blogs from '../../Shared/Blogs/Blogs';
 import Inventories from '../../Shared/Inventories/Inventories';
+import { Link } from 'react-router-dom';
+import './Home.css'
 const Home = () => {
 
     const [index, setIndex] = useState(0);
@@ -59,6 +61,9 @@ const Home = () => {
 
             <div>
                 <Inventories></Inventories>
+            </div>
+            <div className='text-center mt-5 manageInventory'>
+                <Link to='/manageinventory'>Manage Inventory</Link>
             </div>
             <Blogs></Blogs>
             <Contact></Contact>

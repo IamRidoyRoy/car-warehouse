@@ -1,0 +1,9 @@
+.manageInventory a {
+    text-decoration: none;
+    background-color: tomato;
+    padding: 20px;
+    border: 2px solid yellow;
+    border-radius: 8px;
+    color: white;
+    font-weight: 700;
+}
