@@ -15,8 +15,48 @@ const Home = () => {
         <div>
             <Header></Header>
 
+            <div>
+                <Carousel activeIndex={index} onSelect={handleSelect}>
+                    <Carousel.Item>
+                        <img height={500}
+                            className="d-block w-100"
+                            src={car1}
+                            alt="First slide"
+                        />
+                        <Carousel.Caption>
+                            <h3>White car</h3>
+                            <p>This is a top white in the word</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img height={500}
+                            className="d-block w-100"
+                            src={car2}
+                            alt="Second slide"
+                        />
 
-        </div>
+                        <Carousel.Caption>
+                            <h3>Silver color car</h3>
+                            <p>This is a top Silver color in the word</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img height={500}
+                            className="d-block w-100"
+                            src={car3}
+                            alt="Third slide"
+                        />
+
+                        <Carousel.Caption>
+                            <h3>White glow car</h3>
+                            <p>This is a top white in the word</p>
+                        </Carousel.Caption>
+
+                    </Carousel.Item>
+                </Carousel>
+
+            </div>
+        </div >
     );
 };
 
