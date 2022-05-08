@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Carousel } from 'react-bootstrap';
-import Header from '../../Shared/Header/Header';
 import car1 from '../../../images/car1.jpg'
 import car2 from '../../../images/car2.jpg'
 import car3 from '../../../images/car3.jpg'
@@ -16,8 +15,6 @@ const Home = () => {
     };
     return (
         <div>
-            <Header></Header>
-
             <div>
                 <Carousel activeIndex={index} onSelect={handleSelect}>
                     <Carousel.Item>

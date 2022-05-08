@@ -1,6 +1,5 @@
 import React from 'react';
 import { Card, Col, Row } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import car3 from '../../../images/car3.jpg'
 const Blogs = () => {
     return (
