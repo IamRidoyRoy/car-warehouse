@@ -4,7 +4,7 @@ import car3 from '../../../images/car3.jpg'
 const Blogs = () => {
     return (
         <div>
-            <h2 className='text-center'>Car Blogs</h2>
+            <h2 className='text-center mt-5'>Car Blogs</h2>
             <div className='container'>
                 <Row xs={1} md={2} className="g-4">
                     {Array.from({ length: 4 }).map((_, idx) => (

@@ -6,6 +6,7 @@ import car3 from '../../../images/car3.jpg'
 import Footer from '../../Shared/Footer/Footer';
 import Contact from '../../Shared/Contact/Contact';
 import Blogs from '../../Shared/Blogs/Blogs';
+import Inventories from '../../Shared/Inventories/Inventories';
 const Home = () => {
 
     const [index, setIndex] = useState(0);
@@ -57,7 +58,7 @@ const Home = () => {
             </div>
 
             <div>
-                <h2 className='text-center mt-4'>Our warehouse Item</h2>
+                <Inventories></Inventories>
             </div>
             <Blogs></Blogs>
             <Contact></Contact>
