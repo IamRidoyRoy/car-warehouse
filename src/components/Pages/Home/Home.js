@@ -4,6 +4,8 @@ import Header from '../../Shared/Header/Header';
 import car1 from '../../../images/car1.jpg'
 import car2 from '../../../images/car2.jpg'
 import car3 from '../../../images/car3.jpg'
+import Footer from '../../Shared/Footer/Footer';
+import Contact from '../../Shared/Contact/Contact';
 const Home = () => {
 
     const [index, setIndex] = useState(0);
@@ -54,8 +56,13 @@ const Home = () => {
 
                     </Carousel.Item>
                 </Carousel>
-
             </div>
+
+            <div>
+                <h2 className='text-center mt-4'>Our warehouse Item</h2>
+            </div>
+            <Contact></Contact>
+            <Footer></Footer>
         </div >
     );
 };

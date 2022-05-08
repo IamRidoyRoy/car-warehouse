@@ -3,7 +3,9 @@ import React from 'react';
 const Footer = () => {
     return (
         <div>
-            <h2>Footer</h2>
+            <footer className='text-center mt-5'>
+                <p>&copy; Car Warehouse Services {(new Date().getFullYear())} </p>
+            </footer>
         </div>
     );
 };
