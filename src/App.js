@@ -9,6 +9,7 @@ import Inventories from './components/Shared/Inventories/Inventories';
 import RequireAuth from './components/RequireAuth/RequireAuth';
 import Login from './components/Pages/Login/Login';
 import Register from './components/Pages/Login/Register';
+import CarDetails from './components/Pages/CarDetails/CarDetails';
 function App() {
   return (
     <div >
@@ -16,6 +17,9 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
+        <Route path='/inventory/:id' element={
+          <RequireAuth><CarDetails></CarDetails></RequireAuth>
+        }></Route>
         <Route path='/inventoryitem' element={
           <RequireAuth><Inventories></Inventories></RequireAuth>
         }></Route>

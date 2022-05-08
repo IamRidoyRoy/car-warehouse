@@ -5,7 +5,7 @@ const Inventory = ({ car }) => {
     const { _id, name, price, image, description, quantity, supplier_name } = car;
     const navigate = useNavigate();
     const navigateToServiceDetails = id => {
-        navigate(`/car/${id}`);
+        navigate(`/inventory/${id}`);
     }
     return (
         <div className='sigle-car'>
