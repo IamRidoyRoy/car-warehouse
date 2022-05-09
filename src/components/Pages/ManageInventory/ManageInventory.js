@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const ManageInventory = () => {
     const [caritems, setCarItems] = useState([]);
@@ -27,7 +28,7 @@ const ManageInventory = () => {
 
     return (
         <div className='w-50 mx-auto text-center mt-5'>
-            <button>Add New Item</button>
+            <Link className='ms-2' to='/addnewitem'><button className='btn btn-primary'>Add new item</button></Link>
             <h2>This is from Manage user</h2>
             <div>
                 {

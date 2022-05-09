@@ -11,6 +11,7 @@ import Login from './components/Pages/Login/Login';
 import Register from './components/Pages/Login/Register';
 import CarDetails from './components/Pages/CarDetails/CarDetails';
 import UpdateQuantity from './components/Pages/UpdateQuantity/UpdateQuantity';
+import AddNewItem from './components/Pages/AddNewItem/AddNewItem';
 function App() {
   return (
     <div >
@@ -29,6 +30,9 @@ function App() {
         }></Route>
         <Route path='/manageinventory' element={
           <RequireAuth><ManageInventory></ManageInventory></RequireAuth>
+        }></Route>
+        <Route path='/addnewitem' element={
+          <RequireAuth><AddNewItem></AddNewItem></RequireAuth>
         }></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
