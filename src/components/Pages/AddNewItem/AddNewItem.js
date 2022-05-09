@@ -4,7 +4,7 @@ const AddNewItem = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         console.log(data)
-        const url = `http://localhost:5000/car`;
+        const url = `https://infinite-fortress-97398.herokuapp.com/car`;
         fetch(url, {
             method: "POST",
             headers: {

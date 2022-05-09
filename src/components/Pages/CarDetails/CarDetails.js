@@ -8,7 +8,7 @@ const CarDetails = () => {
     const [carware, setcarware] = useState({});
     const [delivered, setDelivered] = useState();
     useEffect(() => {
-        const url = `http://localhost:5000/inventory/${id}`;
+        const url = `https://infinite-fortress-97398.herokuapp.com/inventory/${id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setcarware(data))
@@ -17,7 +17,7 @@ const CarDetails = () => {
     const navigateToDelivery = id => {
         navigate(`/inventory/${id}`);
         console.log("Post is deleting");
-        const url = `http://localhost:5000/inventory/${id}`
+        const url = `https://infinite-fortress-97398.herokuapp.com/inventory/${id}`
         fetch(url, {
             method: 'DELETE'
         })

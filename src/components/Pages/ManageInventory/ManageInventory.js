@@ -5,7 +5,7 @@ const ManageInventory = () => {
     const [caritems, setCarItems] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/car')
+        fetch('https://infinite-fortress-97398.herokuapp.com/car')
             .then(res => res.json())
             .then(data => setCarItems(data))
     }, []);
@@ -13,7 +13,7 @@ const ManageInventory = () => {
         const proceed = window.confirm("Are you sure to delete?")
         if (proceed) {
             console.log("Post is deleting");
-            const url = `http://localhost:5000/inventory/${id}`
+            const url = `https://infinite-fortress-97398.herokuapp.com/inventory/${id}`
             fetch(url, {
                 method: 'DELETE'
             })
