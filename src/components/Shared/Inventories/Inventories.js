@@ -14,7 +14,7 @@ const Inventories = () => {
             <h1 className='car mt-2'>Car Collections</h1>
             <div className='car-container'>
                 {
-                    cars.map(car => <Inventory
+                    cars.slice(1, 7).map(car => <Inventory
                         key={car._id}
                         car={car}
                     ></Inventory>)
