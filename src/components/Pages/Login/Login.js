@@ -4,6 +4,7 @@ import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from "react-
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import auth from "../../../firebase.init";
+import SocialLogin from "./SocialLogin";
 
 const Login = () => {
     const emailRef = useRef('');
@@ -80,7 +81,7 @@ const Login = () => {
             </Form>
             <p className='text-center mt-2'>Forgot Password? <button className=' btn btn-link text-danger pe-auto text-decoration-none' onClick={handleResetPassword}><b>Reset Password</b></button></p>
             <p className='text-center mt-2'>New to Car Warehouse? <Link to='/register' className='text-primary pe-auto text-decoration-none' onClick={navigateRegister}><b>Please Register</b></Link></p>
-
+            <SocialLogin></SocialLogin>
             <ToastContainer />
 
         </div>
