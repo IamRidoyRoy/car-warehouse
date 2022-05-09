@@ -3,6 +3,7 @@ import { Button, Form } from "react-bootstrap";
 import { useCreateUserWithEmailAndPassword, useUpdateProfile } from "react-firebase-hooks/auth";
 import { Link, useNavigate } from "react-router-dom";
 import auth from "../../../firebase.init";
+import Loading from "../../Shared/Loading/Looding";
 
 
 const Register = () => {
@@ -11,7 +12,7 @@ const Register = () => {
     const [
         createUserWithEmailAndPassword,
         user,
-        // loading,
+        loading,
         // error,
     ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
 
@@ -31,6 +32,9 @@ const Register = () => {
     }
     if (user) {
         console.log(user);
+    }
+    if (loading) {
+        return <Loading></Loading>
     }
 
     return (

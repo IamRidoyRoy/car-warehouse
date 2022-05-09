@@ -4,6 +4,7 @@ import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from "react-
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import auth from "../../../firebase.init";
+import Loading from "../../Shared/Loading/Looding";
 import SocialLogin from "./SocialLogin";
 
 const Login = () => {
@@ -53,7 +54,7 @@ const Login = () => {
         );
     }
     if (loading) {
-        return "Loading..."
+        return <Loading></Loading>
     }
 
     if (user) {
