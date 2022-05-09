@@ -33,10 +33,11 @@ const Header = () => {
                                 </>
                             }
                             <Nav.Link as={Link} to="/manageinventory">Manage Inventory</Nav.Link>
+                            <Nav.Link as={Link} to="/blogs">Blogs</Nav.Link>
 
                             {
                                 user ?
-                                    <button className='btn btn-link text-white text-decoration-none' onClick={handleSignOut}><b>Signout</b></button>
+                                    <button className='btn btn-link text-white text-decoration-none' onClick={handleSignOut}><b>Logout</b></button>
                                     : <Nav.Link eventKey={2} as={Link} to="/login">
                                         Login
                                     </Nav.Link>

@@ -5,7 +5,7 @@ import car2 from '../../../images/car2.jpg'
 import car3 from '../../../images/car3.jpg'
 import Footer from '../../Shared/Footer/Footer';
 import Contact from '../../Shared/Contact/Contact';
-import Blogs from '../../Shared/Blogs/Blogs';
+import CarBlogs from '../../Shared/CarBlogs/CarBlogs';
 import Inventories from '../../Shared/Inventories/Inventories';
 import { Link } from 'react-router-dom';
 import './Home.css'
@@ -65,7 +65,7 @@ const Home = () => {
             <div className='text-center mt-5 manageInventory'>
                 <Link to='/manageinventory'>Manage Inventory</Link>
             </div>
-            <Blogs></Blogs>
+            <CarBlogs></CarBlogs>
             <Contact></Contact>
             <Footer></Footer>
         </div >

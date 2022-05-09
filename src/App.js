@@ -12,6 +12,8 @@ import Register from './components/Pages/Login/Register';
 import CarDetails from './components/Pages/CarDetails/CarDetails';
 import UpdateQuantity from './components/Pages/UpdateQuantity/UpdateQuantity';
 import AddNewItem from './components/Pages/AddNewItem/AddNewItem';
+import NotFound from './components/Pages/NotFound/NotFound';
+import Blogs from './components/Pages/Blogs/Blogs';
 function App() {
   return (
     <div >
@@ -36,6 +38,9 @@ function App() {
         }></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
+        <Route path='/blogs' element={<Blogs></Blogs>}></Route>
+        <Route path='/*' element={<NotFound></NotFound>}></Route>
+
       </Routes>
     </div>
   );
